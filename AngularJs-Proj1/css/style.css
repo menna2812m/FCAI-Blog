@@ -1,3 +1,46 @@
 body{
     display: grid;
 }
+
+/* WBlog */
+
+        .selector-for-some-widget {
+            box-sizing: content-box;
+            }
+          #WBlog textarea{
+               resize: none;
+               height: 250px;
+               font-size:20px ;
+               padding-left: 15px;
+           }
+           #WBlog input {
+               height: 80px;
+               font-size:25px ;
+               font-weight: bold;
+               padding-left: 15px;
+
+           }
+
+           #WBlog input::placeholder{
+               font-size:25px ;
+           }
+           #WBlog  textarea::placeholder{
+            font-size:20px ;
+           }
+           #WBlog #Tags{
+               height: 60px;
+            font-size: 15px;
+           }
+           #WBlog #Tags::placeholder{
+               font-size: 15px;
+           }
+           #WBlog input:focus{
+            outline: none;
+           }
+           #WBlog textarea:focus{
+               outline: none;
+           }
+           #WBlog #d1{
+            line-height: 0.8;
+           }
+    
