@@ -1,0 +1,51 @@
+
+<nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top" ng-include="'../partials/navbarAfter.html'">
+</nav> 
+<div class="container pb-3 " ng-controller="BlogsController" ng-model="data" >
+
+<div class="bg-light "  > 
+<h2 class="py-3 px-3" > Your Blogs...</h2>
+
+</div >
+
+
+<!-- cond#1 -->
+<div ng-if="data !=' '" ng-repeat=" x in data" class="w-75 mx-auto  " >
+   
+    <div flex="50">
+        <md-card>
+            <md-card-header>
+                <md-card-header-text>
+                  <span class="md-title">{{x.Writer}}</span>
+                  <span class="md-subhead">{{x.Time}}</span>
+                </md-card-header-text>
+              </md-card-header>
+            <md-card-content>
+            <h2> {{x.Title}}</h2>
+            <p> {{x.content}}</p>
+            </md-card-content>
+            <md-card-footer>
+            {{x.Tags}}
+            </md-card-footer>
+       </md-card>
+    </div>
+
+
+</div>
+
+<!-- cond#2 -->
+<div ng-if="data==' '" >
+    <div flex="50" class="w-75 mx-auto  ">
+        <md-card>
+           
+            <md-card-content>
+            <h4 class="text-center"> No Blogs yet......</h4>
+            </md-card-content>
+           
+       </md-card>
+    </div>
+</div>
+
+</div>
+
+
