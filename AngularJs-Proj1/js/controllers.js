@@ -44,3 +44,6 @@ fcaiBlog.controller('registerController', ['$http', '$scope', function($http, $s
     // }
 }]);
 
+fcaiBlog.controller('BlogsController', function($scope){
+    $scope.data=[' '];
+});
